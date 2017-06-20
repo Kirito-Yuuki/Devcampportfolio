@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20170615144658) do
 
   create_table "portfolios", force: :cascade do |t|
     t.string   "title"
-    t.string  "subtitle"
+    t.string   "subtitle"
     t.text     "body"
     t.text     "main_image"
     t.text     "thumb_image"
