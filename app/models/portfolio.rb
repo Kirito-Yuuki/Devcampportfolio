@@ -5,5 +5,4 @@ class Portfolio < ApplicationRecord
     where(subtitle: 'Angular')
   end
   
-
 end
