@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
-
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -31,7 +31,11 @@
     
     <%= yield %>
     
+<<<<<<< HEAD
     <%= copyright_generator %>
+=======
+    <%= @copyright %>
+>>>>>>> rubygem
     
     <% if session[:source] %>
       <p>Thanks for visting me from <%= session[:source] %></p>
