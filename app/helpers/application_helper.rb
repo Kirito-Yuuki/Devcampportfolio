@@ -21,5 +21,3 @@ end
         content_tag(:p, greeting, class: "source-greeting")
       end 
     end
-end
->>>>>>> 7a1dd9471157610b16640fbfcf3d1c464770c1ba
