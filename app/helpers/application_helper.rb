@@ -1,17 +1,11 @@
 module ApplicationHelper
-  
-  def copyright_generator
-    KrieterViewTool::Renderer.copyright 'Jacob Krieter', 'All rights reserved'
-  end
-end
-
-  def login_helper
+  def login_helper style
       if current_user.is_a?(User)
-        link_to "Logout", destroy_user_session_path, method: :delete
+        link_to "Logout", destroy_user_session_path, method: :delete, class: style
       else
-        (link_to "Sign up", new_user_registration_path) +
-        "<br>".html_safe +
-        (link_to "login", new_user_session_path)
+        (link_to "Sign up", new_user_registration_path, class: style) +
+        " ".html_safe +
+        (link_to "login", new_user_session_path, class: style)
       end
   end
   
@@ -21,3 +15,8 @@ end
         content_tag(:p, greeting, class: "source-greeting")
       end 
     end
+    
+    def copyright_generator
+      KrieterViewTool::Renderer.copyright 'Jacob Krieter', 'All rights reserved'
+    end
+end
