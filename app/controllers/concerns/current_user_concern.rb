@@ -5,7 +5,7 @@ module CurrentUserConcern
     super || guest_user
   end
 
-  def current_user
+  def guest_user
     guest = GuestUser.new
     guest.name = "Guest User"
     guest.first_name = "Guest"
