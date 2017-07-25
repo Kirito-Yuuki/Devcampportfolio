@@ -20,3 +20,4 @@ module ApplicationHelper
       KrieterViewTool::Renderer.copyright 'Jacob Krieter', 'All rights reserved'
     end
 end
+
